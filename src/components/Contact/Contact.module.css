@@ -1,0 +1,152 @@
+.contactSection {
+  background-color: #005051;
+  color: white;
+  background: linear-gradient(#00505162, #0050515b),
+    url("https://www.shutterstock.com/image-photo/call-center-smile-woman-fast-260nw-2348689723.jpg");
+  /* background-image: url("https://www.shutterstock.com/image-photo/call-center-smile-woman-fast-260nw-2348689723.jpg"); */
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0px;
+}
+.container {
+  text-align: center;
+}
+.container h1 {
+  font-size: 52px;
+}
+.contactDetails {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.AdressDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.eachSectionContainer {
+  max-width: 400px;
+  margin-top: 30px;
+}
+.eachSectionContainer p {
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.eachSectionContainer h3 {
+  font-weight: normal;
+  font-size: 24px;
+}
+.iconMarker {
+  font-size: 52px;
+  text-align: center;
+}
+.iconDivSection {
+  /* width: 100px;
+  height: 100px;
+  background-color: #04bec17a;
+  text-align: center; */
+}
+.section2 {
+  margin: 50px auto;
+  display: flex;
+  max-width: 1200px;
+  gap: 20px;
+}
+.messageUsData {
+  max-width: 600px;
+}
+.messageUsData h1 {
+  font-size: 54px;
+  margin-bottom: 20px;
+}
+.messageUsData p {
+  font-size: 26px;
+  line-height: 30px;
+}
+.reviewInputs {
+}
+.reviewInputs input,
+.reviewInputs textarea {
+  width: 100%;
+  margin: auto;
+  height: 30px;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px;
+  margin-bottom: 30px;
+  padding: 20px 5px;
+  border: none;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.reviewInputs textarea {
+  height: 150px;
+}
+.reviewInputs button {
+  padding: 8px 15px;
+  font-weight: 600;
+  background-color: #df2020;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .section2 {
+    flex-wrap: wrap;
+    max-width: 900px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container h1 {
+    font-size: 46px;
+  }
+  .eachSectionContainer p {
+    font-size: 38px;
+  }
+  .eachSectionContainer h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .section2 {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .messageUsData h1 {
+    font-size: 46px;
+  }
+  .messageUsData p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section2 {
+    max-width: 270px;
+  }
+  .messageUsData h1 {
+    font-size: 38px;
+  }
+  .messageUsData p {
+    font-size: 14px;
+  }
+  .container h1 {
+    font-size: 42px;
+  }
+  .eachSectionContainer {
+    max-width: 270px;
+    margin-top: 30px;
+  }
+  .eachSectionContainer p {
+    font-size: 34px;
+  }
+  .eachSectionContainer h3 {
+    font-size: 18px;
+  }
+}

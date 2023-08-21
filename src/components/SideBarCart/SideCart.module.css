@@ -1,0 +1,198 @@
+.cart {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.639);
+  z-index: 99999;
+}
+.cart_container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  /* max-height: 100%; */
+  background-color: #fff;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+.closeCancelButton {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+}
+.closeCancelButton {
+  width: 20%;
+  border-radius: 5px;
+  border: none;
+  background-color: #df20206a;
+  padding: 5px 0px;
+}
+.cartContainerList {
+  margin: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cartItem {
+  margin-left: 10px;
+  display: flex;
+  gap: 10px;
+}
+.cartItem img {
+  width: 80px;
+  border-radius: 5px;
+}
+.cartCount {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.cartCount p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.countOfItems {
+  display: flex;
+  align-items: center;
+}
+.countOfItems span {
+  font-size: 18px;
+}
+.countOfItems span .close {
+  font-size: 10px;
+  color: black;
+  font-weight: 600;
+}
+.countOfItems span:first-child {
+  margin-right: 50px;
+}
+.countOfItems span:last-child {
+  font-size: 20px;
+  color: #df2020;
+  font-weight: 600;
+}
+.countButton {
+  background-color: #fde4e4;
+  display: block;
+}
+.countButton {
+  width: 90px;
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.countButton button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+}
+.countButton button,
+.countButton span {
+  padding: 5px 10px;
+}
+
+.countButton span {
+  flex-grow: 1;
+}
+.cartContiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.totalEachCount {
+  display: flex;
+  align-items: center;
+}
+.cartsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  flex-grow: 1;
+}
+.footersection {
+  height: 80px;
+  background-color: #df2020;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.footersection p {
+  display: flex;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 5px;
+  align-items: center;
+  gap: 10px;
+}
+.footersection p span {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+.footersection button {
+  font-size: 18px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+.cartIsEmpty {
+  color: #df2020;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  align-items: center;
+}
+/* .cartContainerList {
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+} */
+
+@media only screen and (max-width: 500px) {
+  .closeCancelButton {
+    font-size: 18px;
+  }
+  .cart_container {
+    width: 270px;
+  }
+  .cartItem img {
+    width: 40px;
+    height: 50px;
+  }
+  .cartCount p {
+    font-size: 14px;
+  }
+  .countOfItems span {
+    font-size: 14px;
+  }
+  .countOfItems span:last-child {
+    font-size: 14px;
+  }
+  .countButton {
+    font-size: 14px;
+  }
+  .countButton button {
+    font-size: 14px;
+  }
+}

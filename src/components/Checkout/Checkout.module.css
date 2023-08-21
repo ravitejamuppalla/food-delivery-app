@@ -1,0 +1,244 @@
+.foodDetailsName {
+  background: linear-gradient(#212245b2, #212245b2),
+    url("../../assets/images/banner-02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 100px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.checkout_continer {
+  max-width: 1300px;
+  margin: 0px auto;
+  display: flex;
+  padding: 40px;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+.shippingAddress {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  gap: 20px;
+}
+.shippingAddress p {
+  font-size: 24px;
+  font-weight: 600;
+}
+.shippingAddress input,
+.shippingAddress textarea {
+  width: 100%;
+  margin: auto;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(139, 139, 139);
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.shippingAddress textarea {
+  height: 150px;
+}
+.shippingAddress button {
+  width: 12%;
+  padding: 8px 15px;
+  font-weight: 600;
+  background-color: #df2020;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.reviewerItem {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.reviewerItem p:last-child {
+  margin-top: 10px;
+}
+.reviewer_Name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.totalAmount_Container {
+  max-width: 500px;
+
+  flex-grow: 1;
+}
+.amountData {
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  background-color: #fde4e4;
+  margin-bottom: 50px;
+}
+.total_Details {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 18px;
+}
+.total_Details:last-child {
+}
+.linegap {
+  border: 1px solid rgb(156, 156, 156);
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.totalAmount_Container p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.amountDetails {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.newAddressData {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.newAddressData span {
+  cursor: pointer;
+  font-weight: 600;
+  color: #df2020;
+}
+.NewAddressForm p {
+  margin-bottom: 20px;
+}
+.addressHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.closeIcon {
+  font-size: 24px;
+  cursor: pointer;
+}
+.EachAddressDetails {
+  display: flex;
+  border: 1px solid #aaa;
+  padding: 5px;
+  align-items: center;
+  border-radius: 5px;
+  gap: 10px;
+  word-wrap: break-word;
+}
+
+.EachAddressDetails input {
+  max-width: 10%;
+  margin: 0px;
+}
+.EachAddressDetails p {
+  font-size: 22px;
+  font-weight: 500;
+}
+.addressData {
+  width: 500px;
+  overflow-wrap: break-word;
+  flex-grow: 1;
+  word-wrap: break-word;
+}
+.addressData p {
+}
+.previousAddress {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.checkboxround {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  /* vertical-align: middle; */
+  /* border: 1px solid #ddd; */
+  /* appearance: none; */
+  /* -webkit-appearance: none; */
+  outline: none;
+  cursor: pointer;
+}
+
+.checkboxround:checked {
+  background-color: rgb(255, 27, 27);
+}
+#submitbutton {
+  width: 10%;
+  background-color: #df2020;
+  border: none;
+  font-size: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.proceedTOCheckOut {
+  font-size: 22px;
+  background-color: #df202081;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.proceedTOCheckOut a {
+  color: black !important;
+}
+.proceedTOCheckOut:disabled {
+  background-color: #232323a7;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 700px) {
+  .shippingAddress p {
+    text-align: center;
+  }
+  .shippingAddress {
+    width: 400px;
+    margin: 0px auto;
+  }
+  .EachAddressDetails {
+    height: 100px;
+  }
+  .EachAddressDetails p {
+    font-size: 18px;
+    text-overflow: ellipsis;
+    overflow-y: scroll;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .shippingAddress {
+    width: 270px;
+    margin: 0px auto;
+  }
+  .proceedTOCheckOut {
+    font-size: 16px;
+
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+}

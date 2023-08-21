@@ -1,0 +1,139 @@
+.TastyThreat {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.container img {
+  max-width: 600px;
+}
+.content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.content h1 {
+  font-size: 38px;
+}
+.content h1 span {
+  color: #df2020;
+}
+.content p {
+  line-height: 30px;
+  color: rgb(145, 145, 145);
+}
+.listOfTreatsData {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.listOfTastTreat {
+  display: flex;
+  flex-direction: column;
+}
+.checkcircle {
+  font-size: 18px;
+  color: #df2020;
+}
+
+.listOfTastTreat h3 {
+  display: flex;
+  gap: 5px;
+}
+.listOfPizzaContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.secondContainer h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1300px) {
+  .TastyThreat {
+    max-width: 1100px;
+    margin: 0px auto;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+  .content {
+    max-width: 800px;
+  }
+  .container img {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .TastyThreat {
+    max-width: 800px;
+  }
+
+  .Heading {
+    font-size: 16px;
+  }
+  .HomeRow {
+    flex-wrap: wrap;
+  }
+  .row1 h1 {
+    font-size: 38px;
+  }
+  .headingdetails {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .container img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .TastyThreat {
+    max-width: 600px;
+  }
+  .Heading {
+    font-size: 14px;
+  }
+
+  .row1 h1 {
+    font-size: 34px;
+  }
+  .headingdetails {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .container img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .TastyThreat {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .TastyThreat {
+    max-width: 270px;
+  }
+  .buttonOrders button {
+    padding: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+  .buttonOrders {
+    gap: 30px;
+  }
+  .OrderNowButton {
+    font-size: 12px !important;
+  }
+}

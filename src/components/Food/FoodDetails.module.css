@@ -1,0 +1,298 @@
+.foodDetailsName {
+  background: linear-gradient(#212245b2, #212245b2),
+    url("../../assets/images/banner-02.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0px;
+}
+.foodDetailsName {
+  font-size: 38px;
+  padding-left: 150px;
+  font-weight: 600;
+  color: #fff;
+}
+.foodMainContiner {
+  max-width: 1100px;
+  margin: 50px auto;
+}
+.foodDetails_Container {
+  display: flex;
+}
+.allImages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+}
+.allImages img {
+  width: 150px;
+}
+.images {
+  display: flex;
+  flex-grow: 1;
+  gap: 20px;
+  cursor: pointer;
+}
+.mainImage {
+  max-height: 500px;
+  flex-grow: 1;
+}
+.InlineBlack {
+  display: flex;
+  gap: 10px;
+}
+.FoodDetailsContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: 40px;
+}
+
+.FoodDetailsContent h3 {
+  font-size: 44px;
+  font-family: "RocknRoll One", sans-serif !important;
+}
+.priceValue {
+  color: #df2020;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.priceValue p:last-child {
+  font-size: 24px;
+}
+.category {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.category p:last-child {
+  padding: 10px;
+  background-color: #fde4e4;
+  border-radius: 5px;
+}
+.FoodDetailsContent button {
+  display: inline-block;
+  padding: 8px;
+  color: #fff;
+  background-color: #df2020;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.foodDescriptionAndReview {
+  margin-top: 40px;
+}
+.headings {
+  display: flex;
+  gap: 20px;
+  font-weight: 600;
+  border-bottom: 1px solid rgb(71, 71, 71);
+  padding-bottom: 15px;
+}
+.headings p {
+  cursor: pointer;
+}
+
+.descriptionDetails {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 20px;
+  color: rgb(102, 102, 102);
+}
+.reviewInputs {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  margin: 0px auto;
+  padding: 40px;
+  background-color: #fde4e4;
+  gap: 20px;
+}
+.reviewInputs input,
+.reviewInputs textarea {
+  width: 100%;
+  margin: auto;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgb(139, 139, 139);
+  font-size: 20px;
+}
+.reviewInputs textarea {
+  height: 150px;
+}
+.reviewInputs button {
+  width: 15%;
+  padding: 8px 15px;
+  font-weight: 600;
+  background-color: #df2020;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.reviewerItem {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.reviewerItem p:last-child {
+  margin-top: 10px;
+}
+.reviewer_Name {
+  font-size: 16px;
+  font-weight: 600;
+}
+.ReviewContentDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.activeHeading {
+  color: #df2020;
+}
+
+.mightBeLike p {
+  font-size: 24px;
+  font-weight: 600;
+}
+.mightBeLike {
+  margin: 30px auto;
+}
+.cartItem {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.currencyData {
+  display: flex;
+  align-items: center;
+}
+.displaying_content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .foodMainContiner {
+    max-width: 900px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .foodDetailsName {
+    font-size: 34px;
+  }
+  .foodMainContiner {
+    max-width: 600px;
+  }
+  .images {
+    flex-direction: column;
+  }
+
+  .allImages {
+    flex-direction: row;
+    order: 1;
+  }
+  .FoodDetailsContent {
+    order: 2;
+  }
+
+  .SingleImage {
+    width: 450px;
+  }
+
+  .FoodDetailsContent {
+    margin-left: 0px;
+  }
+
+  .reviewInputs {
+    width: 450px;
+  }
+  .reviewInputs button {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .foodDetailsName {
+    font-size: 30px;
+  }
+  .foodMainContiner {
+    max-width: 400px;
+  }
+  .foodDetails_Container {
+    justify-content: center;
+  }
+  .allImages img {
+    width: 100px;
+  }
+  .SingleImage {
+    width: 350px;
+  }
+  .FoodDetailsContent h3 {
+    font-size: 38px;
+  }
+  .priceValue p:last-child {
+    font-size: 18px;
+  }
+  .reviewInputs {
+    width: 300px;
+    margin: 0px;
+  }
+  .reviewInputs button {
+    width: 30%;
+  }
+  .mightBeLike p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .foodDetailsName {
+    font-size: 24px;
+  }
+  .foodMainContiner {
+    max-width: 300px;
+  }
+  .allImages img {
+    width: 50px;
+  }
+  .SingleImage {
+    width: 270px;
+  }
+  .FoodDetailsContent h3 {
+    font-size: 28px;
+  }
+  .descriptionDetails {
+    font-size: 12px;
+  }
+  .reviewInputs {
+    width: 250px;
+    margin: 0px;
+  }
+  .reviewInputs button {
+    width: 40%;
+  }
+  .mightBeLike p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .foodMainContiner {
+    max-width: 250px;
+  }
+  .foodDetailsName {
+    font-size: 8px;
+  }
+  .mightBeLike p {
+    font-size: 10px;
+  }
+}

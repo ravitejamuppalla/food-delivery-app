@@ -1,0 +1,383 @@
+.HeaderDetails {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+  align-items: center;
+}
+.logo img {
+  width: 50px;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.logo span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  max-width: 500px;
+  cursor: pointer;
+}
+.menu a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.963);
+  font-size: 18px;
+  font-weight: 700;
+}
+.cartIconElement {
+  font-size: 28px;
+}
+.menu .active {
+  color: #df2020;
+}
+.cartIcon {
+  position: relative;
+  cursor: pointer;
+}
+.cartIcon span {
+  position: absolute;
+
+  border-radius: 90%;
+  color: #fff;
+  top: 0;
+  color: #df2020;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+.cart-MenuIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.menu-Icon {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.show__menu {
+  display: block;
+}
+.userIcon {
+  margin-left: 30px;
+  font-size: 26px;
+}
+.cartIcon {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.cartIcon button {
+  padding: 13px 15px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid #484848;
+}
+
+.loginButton {
+  background-color: white;
+}
+.loginButton:hover {
+  background-color: #e0e0e0;
+}
+.loginButton a {
+  color: #020202 !important;
+}
+.signUpButton {
+  background-color: #020202;
+  color: #fff;
+}
+.signUpButton:hover {
+  background-color: #1c1c1c;
+}
+.sucesslogin {
+  width: 40px;
+  height: 40px;
+  background-color: #383838;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  margin-left: 15px;
+}
+.UserName {
+  margin-top: 5px;
+  color: white !important;
+}
+
+.userprofile ul {
+  position: absolute;
+  right: 0.5rem;
+  top: 2.1rem;
+  width: 130px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-weight: 500;
+  padding-left: 10px;
+  background-color: white;
+  transition: 1s;
+  border-top-right-radius: 1px;
+}
+.userprofile li {
+  list-style-type: none;
+  font-size: 18px;
+  color: #020202;
+}
+
+.userProfile_List li:first-child {
+  margin-top: 10px;
+}
+.userProfile_List li:last-child {
+  margin-bottom: 10px;
+}
+.userProfile_List {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1250px) {
+  .HeaderDetails {
+    max-width: 850px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .HeaderDetails {
+    max-width: 600px;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .show__menu {
+    display: none;
+  }
+  .NavigationBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.425);
+    z-index: 99;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 50px;
+    align-items: center;
+  }
+  .logo img {
+    width: 35px;
+  }
+  .logo span {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 650px) {
+  .HeaderDetails {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .HeaderDetails {
+    max-width: 320px;
+  }
+  .logo img {
+    width: 30px;
+  }
+  .logo span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .cart-MenuIcon {
+    gap: 20px;
+  }
+  .cartIcon {
+    gap: 10px;
+  }
+
+  .cartIcon button {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .HeaderDetails {
+    max-width: 300px;
+  }
+  .cartIcon button {
+    padding: 8px 10px;
+    font-size: 8px;
+  }
+}
+
+/* .cartIcon  */
+/* .cartIcon button {
+  background-color: #020202;
+  color: #fff;
+} */
+
+/* .cartIcon button:last-child:hover {
+  background-color: #252525;
+} */
+/* @media only screen and (max-width: 1200px) {
+  .header-container {
+    max-width: 1000px;
+    margin: 0px auto;
+  }
+  .header {
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+} */
+/* @media only screen and (max-width: 850px) {
+  .header-container {
+    max-width: 850px;
+    margin: 0px auto;
+  }
+  .header {
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+} */
+/* @media only screen and (max-width: 950px) {
+  .HeaderDetails {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .show__menu {
+    display: none;
+  }
+  .NavigationBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.425);
+    z-index: 99;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 50px;
+    align-items: center;
+  }
+} */
+
+/* @media only screen and (max-width: 1300px) {
+  .header-container {
+    margin: 0px auto;
+  }
+
+  .cart-MenuIcon {
+    gap: 20px;
+  }
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1300px;
+    justify-content: space-between;
+  }
+} */
+
+/* @media only screen and (max-width: 1000px) {
+  .header-container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .cart-MenuIcon {
+    gap: 10px;
+  }
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1300px;
+    justify-content: space-between;
+  }
+} */
+/* @media only screen and (max-width: 800px) {
+  .mobile-menu {
+    display: block;
+  }
+
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1300px;
+    justify-content: space-between;
+  }
+  .NavigationBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.425);
+    z-index: 99;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 50px;
+    align-items: center;
+  }
+  .show__menu {
+    display: none;
+  }
+} */

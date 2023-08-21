@@ -1,0 +1,85 @@
+.reviewDetails {
+  text-align: center;
+}
+.reviewDetails p {
+  font-size: 26px;
+}
+.containerDetails {
+  margin-bottom: 20px;
+}
+.containerDetails span {
+  font-size: 18px;
+}
+.successMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 20px;
+}
+.okbutton {
+  font-size: 24px;
+}
+.AddressDtails {
+  width: 900px;
+  margin: 0px auto;
+}
+.AddressDtails p {
+  margin-bottom: 10px;
+}
+.AddressDtails button {
+  padding: 5px;
+  font-size: 22px;
+  background-color: #df2020;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+.buttonsChanges {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 30px;
+}
+.onemoreorder {
+  color: #df2020;
+  margin-top: 20px;
+}
+@media screen and (max-width: 950px) {
+  .AddressDtails {
+    width: 400px;
+    word-wrap: break-word;
+  }
+  .AddressDtails button {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .SuccessMessage_Container {
+    max-width: 400px;
+    margin: 0px auto;
+  }
+}
+@media screen and (max-width: 400px) {
+  .reviewDetails p {
+    font-size: 22px;
+  }
+  .containerDetails span {
+    font-size: 14px;
+    word-wrap: break-word;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .AddressDtails {
+    width: 270px;
+    word-wrap: break-word;
+  }
+  .AddressDtails button {
+    font-size: 11px;
+  }
+}

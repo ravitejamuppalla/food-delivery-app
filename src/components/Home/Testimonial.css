@@ -1,0 +1,140 @@
+.testimonialSection {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.container img {
+  width: 600px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ContenetDetailsForTest {
+  width: 400px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Review_Text {
+  margin-top: 10px;
+}
+.Review_Text h5 {
+  margin-bottom: 10px;
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(3, 3, 3);
+  line-height: 25px;
+}
+.reviewer_Details {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.reviewer_Details img {
+  width: 130px;
+  border-radius: 5px;
+}
+.reviewer_Details p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #df2020;
+}
+.ContenetDetailsForTest p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #df2020;
+}
+.ContenetDetailsForTest h1 {
+  font-size: 34px;
+}
+.ContenetDetailsForTest h1 span {
+  color: #df2020;
+}
+.ContenetDetailsForTest span {
+  color: rgb(121, 121, 121);
+  line-height: 25px;
+}
+
+@media screen and (max-width: 1300px) {
+  .testimonialSection {
+    max-width: 1100px;
+    margin: 40px auto;
+  }
+  .reviewer_Details img {
+    max-width: 80px;
+  }
+  .container img {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .testimonialSection {
+    max-width: 800px;
+  }
+
+  .Heading {
+    font-size: 16px;
+  }
+  .HomeRow {
+    flex-wrap: wrap;
+  }
+  .row1 h1 {
+    font-size: 38px;
+  }
+  .headingdetails {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .container img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 850px) {
+  .testimonialSection {
+    max-width: 600px;
+  }
+  .Heading {
+    font-size: 14px;
+  }
+
+  .row1 h1 {
+    font-size: 34px;
+  }
+  .headingdetails {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .container img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .testimonialSection {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .testimonialSection {
+    max-width: 270px;
+  }
+  .buttonOrders button {
+    padding: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
+  .ContenetDetailsForTest {
+    max-width: 300px;
+  }
+  .buttonOrders {
+    gap: 30px;
+  }
+  .OrderNowButton {
+    font-size: 12px !important;
+  }
+}

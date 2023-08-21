@@ -1,0 +1,137 @@
+.foodsBackground {
+  background: linear-gradient(#212245b2, #212245b2),
+    url("../../assets/images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0px;
+}
+.foodsBackground p {
+  margin-left: 150px;
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+}
+.foodsection {
+  max-width: 1100px;
+  margin: 50px auto;
+}
+.searchFunctionlity {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.search {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  display: flex;
+  border-radius: 5px;
+  width: 100%;
+}
+.search input {
+  height: 30px;
+  font-size: 24px;
+  padding: 20px 0px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-left: 8px;
+  width: 100%;
+}
+.search button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btn-secondary {
+  position: absolute;
+}
+.serachIcon {
+  font-size: 24px;
+}
+#sortingFunctionlity {
+  height: 30px;
+  width: 200px;
+  font-size: 18px;
+  outline: none;
+  border-radius: 3px;
+}
+.foodcontainer {
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.notFoundDetails {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  flex-grow: 1;
+  color: #df2020;
+}
+.PaginationButtons {
+  width: 50px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  text-decoration: none;
+  list-style: none;
+}
+.PaginationButtons a {
+  text-decoration: none;
+  padding: 7px 10px;
+  background-color: #df2020;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+.PaginationButtons a:hover {
+  background-color: rgb(19, 0, 36);
+}
+.filterDropdown {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .foodsection {
+    max-width: 900px;
+  }
+  .foodcontainer {
+    justify-content: center;
+  }
+  .searchFunctionlity {
+    flex-wrap: wrap;
+  }
+  .search {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .foodsection {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .foodsection {
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .foodsection {
+    max-width: 300px;
+  }
+  .foodsBackground p {
+    margin-left: 50px;
+  }
+}

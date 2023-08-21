@@ -1,0 +1,104 @@
+.cartSection {
+  background: linear-gradient(#212245b2, #212245b2),
+    url(../../assets/images/fried-potatoes.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0px;
+  font-size: 34px;
+  padding-left: 100px;
+  font-weight: 600;
+  color: #fff;
+}
+.pastOrders {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+.parOrdersEachContainer {
+  border: 1px solid black;
+  padding: 20px;
+  margin: 30px;
+}
+.parOrdersEachContainer P {
+  margin-bottom: 20px;
+}
+.eachCartIeam {
+  max-width: 900px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  font-size: 24px;
+  padding: 30px;
+}
+.eachCartIeam img {
+  width: 100px;
+}
+.productName {
+  max-width: 300px;
+  font-weight: 600;
+}
+.productPrice {
+  display: flex;
+  align-items: center;
+}
+.orderedTime {
+  font-size: 22px;
+  font-weight: 600;
+}
+.headingDetails {
+  display: flex;
+  justify-content: space-between;
+}
+.totalCurrency {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #df2020;
+}
+.noPastOrders {
+  margin: 40px auto;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  color: #df2020;
+}
+@media screen and (max-width: 600px) {
+  .orderedTime {
+    font-size: 16px;
+  }
+  .totalCurrency {
+    font-size: 16px;
+  }
+  .eachCartIeam img {
+    width: 80px;
+  }
+  .eachCartIeam {
+    font-size: 18px;
+    padding: 20px;
+  }
+  .cartSection {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cartSection {
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .orderedTime {
+    font-size: 10px;
+  }
+  .totalCurrency {
+    font-size: 10px;
+  }
+  .eachCartIeam img {
+    display: none;
+  }
+  .eachCartIeam {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
