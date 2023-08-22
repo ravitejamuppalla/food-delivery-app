@@ -107,6 +107,7 @@ export function registerNewAccount(dataToCreateAccount) {
     let newObjectCatItems = {
       uid: userDetails.uid,
       cartItems: [],
+      cartTotalQuantity: 0,
     };
     console.log("Doing the Post Call Data");
     let response = await fetch(
@@ -139,6 +140,7 @@ export function registerNewAccount(dataToCreateAccount) {
       ...(await responseGet.json()),
       fireBaseProfileID: responseData.name,
     };
+    console.log(newObjectWithKey);
 
     //   let getUserDetailsAwaitDetails = await getUserDetails(newObjectCatItems);
     dispatch(productActions.addUserDataDetails(newObjectWithKey));

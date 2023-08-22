@@ -15,9 +15,11 @@ function Header(props) {
   const [isprofileDetails, setProfileDetails] = useState(false);
   let menuRef = useRef();
   let dispatch = useDispatch();
-  let countOfTotalItems = useSelector(
-    (values) => values.product.userDetails.cartTotalQuantity
-  );
+  let countOfTotalItems = useSelector((values) => {
+    if (values.product.userDetails)
+      return values.product.userDetails.cartTotalQuantity;
+    else return null;
+  });
   let loginDetails = useSelector((data) => data.authication.currentUser);
   let openCart = useSelector((values) => values.product.openSideCheckout);
 
